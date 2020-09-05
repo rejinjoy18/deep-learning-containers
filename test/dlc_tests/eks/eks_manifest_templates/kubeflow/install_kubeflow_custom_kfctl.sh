@@ -57,6 +57,10 @@ fi
 eks_cluster_name=$1
 region_name=$2
 
+
+echo "> export region"
+export AWS_REGION=us-west-2
+
 echo "> Setup installation directory"
 create_dir $eks_cluster_name
 
