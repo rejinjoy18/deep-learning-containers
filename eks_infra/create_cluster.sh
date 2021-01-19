@@ -64,7 +64,7 @@ function create_node_group(){
     --asg-access \
     --ssh-access \
     --ssh-public-key "${3}"
-    '''
+    : '
     # dynamic inf nodegroup
     eksctl create nodegroup \
     --name inf-nodegroup-${2/./-} \
@@ -79,7 +79,7 @@ function create_node_group(){
     --asg-access \
     --ssh-access \
     --ssh-public-key "${3}"
-    '''
+    '
 }
 
 # Function to create namespaces in EKS cluster
