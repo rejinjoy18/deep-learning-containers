@@ -8,6 +8,8 @@ OPERATION=$(jq -r '.operation' eks_infra/build_param.json)
 EKS_CLUSTERS=($(jq -r '.eks_clusters[]' eks_infra/build_param.json))
 CONTEXTS=($(jq -r '.contexts[]' eks_infra/build_param.json))
 EKS_VERSION=$(jq -r '.eks_version' eks_infra/build_param.json)
+GET_CLUSTER=$(eksctl get cluster -o json)
+echo ${GET_CLUSTER}
 LIST_CLUSTER=($(eksctl get cluster -o json | jq -r '.[] | .metadata.name'))
 echo ${LIST_CLUSTER[@]}
 CLUSTER_AUTOSCALAR_IMAGE_VERSION=$(jq -r '.cluster_autoscalar_image_version' eks_infra/build_param.json)
