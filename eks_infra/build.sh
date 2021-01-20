@@ -9,6 +9,7 @@ EKS_CLUSTERS=($(jq -r '.eks_clusters[]' eks_infra/build_param.json))
 CONTEXTS=($(jq -r '.contexts[]' eks_infra/build_param.json))
 EKS_VERSION=$(jq -r '.eks_version' eks_infra/build_param.json)
 LIST_CLUSTER=($(eksctl get cluster -o json | jq -r '.[] | .metadata.name'))
+echo ${LIST_CLUSTER[@]}
 CLUSTER_AUTOSCALAR_IMAGE_VERSION=$(jq -r '.cluster_autoscalar_image_version' eks_infra/build_param.json)
 
 # Create operation function
@@ -25,6 +26,7 @@ function create_cluster(){
       CLUSTER_NAME=${CLUSTER}-${CONTEXT}
 
       if [[ ! " ${LIST_CLUSTER[@]} " =~ " ${CLUSTER_NAME} " ]]; then
+        echo ${LIST_CLUSTER[@]}
         ./create_cluster.sh $CLUSTER_NAME $EKS_VERSION
         ./add_iam_identity.sh $CLUSTER_NAME
         ./install_cluster_components.sh $CLUSTER_NAME $CLUSTER_AUTOSCALAR_IMAGE_VERSION
