@@ -76,7 +76,7 @@ function delete_cluster(){
   for CONTEXT in "${CONTEXTS[@]}"; do
     for CLUSTER in "${EKS_CLUSTERS[@]}"; do
       CLUSTER_NAME=${CLUSTER}-${CONTEXT}
-      if [[ " ${LIST_CLUSTER[@]} " =~ " ${CLUSTER_NAME} " ]]; then
+      if [[ ! " ${LIST_CLUSTER[@]} " =~ " ${CLUSTER_NAME} " ]]; then
         ./delete_cluster.sh $CLUSTER_NAME
       else
         echo "EKS Cluster :: ${CLUSTER_NAME} :: does not exists. Skipping delete operation."
