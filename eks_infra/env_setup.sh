@@ -3,10 +3,6 @@
 
 set -ex
 
-#jq
-
-jq --version
-
 # aws caller identity
 aws sts get-caller-identity
 
