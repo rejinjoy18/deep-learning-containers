@@ -1,7 +1,7 @@
 {
-    "operation": "delete",
+    "operation": "create",
     "contexts":[
-        "NIGHTLY"
+        "PR"
     ],
     "eks_clusters":[
         "tensorflow"
