@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="2" failures="0" hostname="3c22fbe19d22.ant.amazon.com" name="pytest" skipped="11" tests="13" time="15.249" timestamp="2021-01-22T13:47:27.324511"><testcase classname="benchmark.ec2.mxnet.test_performance_mxnet_inference" file="benchmark/ec2/mxnet/test_performance_mxnet_inference.py" line="25" name="test_performance_ec2_mxnet_inference_gpu[mxnet_inference0-p3.16xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;mxnet_inference&apos;], function test_performance_ec2_mxnet_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_inference.py:25" type="pytest.skip">benchmark/ec2/mxnet/test_performance_mxnet_inference.py:26: got empty parameter set [&apos;mxnet_inference&apos;], function test_performance_ec2_mxnet_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_inference.py:25</skipped></testcase><testcase classname="benchmark.ec2.pytorch.inference.test_performance_pytorch_inference" file="benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py" line="20" name="test_performance_ec2_pytorch_inference_gpu[pytorch_inference0-p3.16xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;pytorch_inference&apos;], function test_performance_ec2_pytorch_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:20" type="pytest.skip">benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:21: got empty parameter set [&apos;pytorch_inference&apos;], function test_performance_ec2_pytorch_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:20</skipped></testcase><testcase classname="benchmark.ec2.pytorch.training.test_performance_pytorch_training" file="benchmark/ec2/pytorch/training/test_performance_pytorch_training.py" line="44" name="test_performance_pytorch_gpu_imagenet[pytorch_training0-p3.16xlarge-ami-02d9a47bc61a31d43]" time="0.000"><skipped message="Current infrastructure issues are causing this to timeout." type="pytest.skip">benchmark/ec2/pytorch/training/test_performance_pytorch_training.py:45: Current infrastructure issues are causing this to timeout.</skipped></testcase><testcase classname="benchmark.ec2.pytorch.inference.test_performance_pytorch_inference" file="benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py" line="33" name="test_performance_ec2_pytorch_inference_cpu[pytorch_inference0-c5.18xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;pytorch_inference&apos;], function test_performance_ec2_pytorch_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:33" type="pytest.skip">benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:34: got empty parameter set [&apos;pytorch_inference&apos;], function test_performance_ec2_pytorch_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/inference/test_performance_pytorch_inference.py:33</skipped></testcase><testcase classname="benchmark.ec2.tensorflow.training.test_performance_tensorflow_training" file="benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py" line="29" name="test_performance_tensorflow_cpu[tensorflow_training0-c5.18xlarge]" time="0.001"><skipped message="got empty parameter set [&apos;tensorflow_training&apos;], function test_performance_tensorflow_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py:29" type="pytest.skip">benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py:30: got empty parameter set [&apos;tensorflow_training&apos;], function test_performance_tensorflow_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py:29</skipped></testcase><testcase classname="benchmark.ec2.tensorflow.inference.test_performance_tensorflow_inference" file="benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py" line="17" name="test_performance_ec2_tensorflow_inference_gpu[tensorflow_inference0-p3.16xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;tensorflow_inference&apos;], function test_performance_ec2_tensorflow_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:17" type="pytest.skip">benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:18: got empty parameter set [&apos;tensorflow_inference&apos;], function test_performance_ec2_tensorflow_inference_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:17</skipped></testcase><testcase classname="benchmark.ec2.pytorch.training.test_performance_pytorch_training" file="benchmark/ec2/pytorch/training/test_performance_pytorch_training.py" line="31" name="test_performance_pytorch_gpu_synthetic[pytorch_training0-p3.16xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;pytorch_training&apos;], function test_performance_pytorch_gpu_synthetic at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/training/test_performance_pytorch_training.py:31" type="pytest.skip">benchmark/ec2/pytorch/training/test_performance_pytorch_training.py:32: got empty parameter set [&apos;pytorch_training&apos;], function test_performance_pytorch_gpu_synthetic at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/pytorch/training/test_performance_pytorch_training.py:31</skipped></testcase><testcase classname="benchmark.ec2.mxnet.test_performance_mxnet_training" file="benchmark/ec2/mxnet/test_performance_mxnet_training.py" line="25" name="test_performance_ec2_mxnet_training_gpu[mxnet_training0-p3.16xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;mxnet_training&apos;], function test_performance_ec2_mxnet_training_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_training.py:25" type="pytest.skip">benchmark/ec2/mxnet/test_performance_mxnet_training.py:26: got empty parameter set [&apos;mxnet_training&apos;], function test_performance_ec2_mxnet_training_gpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_training.py:25</skipped></testcase><testcase classname="benchmark.ec2.mxnet.test_performance_mxnet_training" file="benchmark/ec2/mxnet/test_performance_mxnet_training.py" line="39" name="test_performance_ec2_mxnet_training_cpu[mxnet_training0-c5.18xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;mxnet_training&apos;], function test_performance_ec2_mxnet_training_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_training.py:39" type="pytest.skip">benchmark/ec2/mxnet/test_performance_mxnet_training.py:40: got empty parameter set [&apos;mxnet_training&apos;], function test_performance_ec2_mxnet_training_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_training.py:39</skipped></testcase><testcase classname="benchmark.ec2.mxnet.test_performance_mxnet_inference" file="benchmark/ec2/mxnet/test_performance_mxnet_inference.py" line="39" name="test_performance_ec2_mxnet_inference_cpu[mxnet_inference0-c5.18xlarge]" time="0.000"><skipped message="got empty parameter set [&apos;mxnet_inference&apos;], function test_performance_ec2_mxnet_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_inference.py:39" type="pytest.skip">benchmark/ec2/mxnet/test_performance_mxnet_inference.py:40: got empty parameter set [&apos;mxnet_inference&apos;], function test_performance_ec2_mxnet_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/mxnet/test_performance_mxnet_inference.py:39</skipped></testcase><testcase classname="benchmark.ec2.tensorflow.inference.test_performance_tensorflow_inference" file="benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py" line="28" name="test_performance_ec2_tensorflow_inference_cpu[tensorflow_inference0-c5.18xlarge]" time="0.002"><skipped message="got empty parameter set [&apos;tensorflow_inference&apos;], function test_performance_ec2_tensorflow_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:28" type="pytest.skip">benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:29: got empty parameter set [&apos;tensorflow_inference&apos;], function test_performance_ec2_tensorflow_inference_cpu at /Users/chumbalk/git-repos/deep-learning-containers/test/dlc_tests/benchmark/ec2/tensorflow/inference/test_performance_tensorflow_inference.py:28</skipped></testcase><testcase classname="benchmark.ec2.tensorflow.training.test_performance_tensorflow_training" file="benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py" line="69" name="test_performance_tensorflow_gpu_imagenet[\t763104351884.dkr.ecr.us-west-2.amazonaws.com/tensorflow-training:2.3.1-gpu-py37-cu102-ubuntu18.04-v2.10-test_performance_tensorflow_gpu_imagenet-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0-p3.16xlarge]" time="2.211"><error message="test setup failure">request = &lt;SubRequest &apos;ec2_instance&apos; for &lt;Function test_performance_tensorflow_gpu_imagenet[\t763104351884.dkr.ecr.us-west-2.ama...4-v2.10-test_performance_tensorflow_gpu_imagenet-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0-p3.16xlarge]&gt;&gt;
+ec2_client = &lt;botocore.client.EC2 object at 0x10b9ef460&gt;, ec2_resource = ec2.ServiceResource(), ec2_instance_type = &apos;p3.16xlarge&apos;
+ec2_key_name = &apos;test_performance_tensorflow_gpu_imagenet-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0&apos;, ec2_instance_role_name = &apos;ec2TestInstanceRole&apos;
+ec2_instance_ami = &apos;ami-032a07adeddce2db8&apos;, region = &apos;us-west-2&apos;, ei_accelerator_type = None
+
+    @pytest.mark.timeout(300)
+    @pytest.fixture(scope=&quot;function&quot;)
+    def ec2_instance(
+            request, ec2_client, ec2_resource, ec2_instance_type, ec2_key_name, ec2_instance_role_name, ec2_instance_ami,
+            region, ei_accelerator_type
+    ):
+        if ec2_instance_type == &quot;p3dn.24xlarge&quot;:
+            region = P3DN_REGION
+            ec2_client = boto3.client(&quot;ec2&quot;, region_name=region, config=Config(retries={&quot;max_attempts&quot;: 10}))
+            ec2_resource = boto3.resource(&quot;ec2&quot;, region_name=region, config=Config(retries={&quot;max_attempts&quot;: 10}))
+            if ec2_instance_ami != PT_GPU_PY3_BENCHMARK_IMAGENET_AMI_US_EAST_1:
+                ec2_instance_ami = UBUNTU_18_BASE_DLAMI_US_EAST_1
+        print(f&quot;Creating instance: CI-CD {ec2_key_name}&quot;)
+        key_filename = test_utils.generate_ssh_keypair(ec2_client, ec2_key_name)
+    
+        def delete_ssh_keypair():
+            if test_utils.is_pr_context():
+                test_utils.destroy_ssh_keypair(ec2_client, key_filename)
+            else:
+                with open(KEYS_TO_DESTROY_FILE, &quot;a&quot;) as destroy_keys:
+                    destroy_keys.write(f&quot;{key_filename}\n&quot;)
+        request.addfinalizer(delete_ssh_keypair)
+    
+        params = {
+            &quot;KeyName&quot;: ec2_key_name,
+            &quot;ImageId&quot;: ec2_instance_ami,
+            &quot;InstanceType&quot;: ec2_instance_type,
+            &quot;IamInstanceProfile&quot;: {&quot;Name&quot;: ec2_instance_role_name},
+            &quot;TagSpecifications&quot;: [
+                {&quot;ResourceType&quot;: &quot;instance&quot;, &quot;Tags&quot;: [{&quot;Key&quot;: &quot;Name&quot;, &quot;Value&quot;: f&quot;CI-CD {ec2_key_name}&quot;}]},
+            ],
+            &quot;MaxCount&quot;: 1,
+            &quot;MinCount&quot;: 1,
+        }
+        extra_volume_size_mapping = [{&quot;DeviceName&quot;: &quot;/dev/sda1&quot;, &quot;Ebs&quot;: {&quot;VolumeSize&quot;: 300,}}]
+        if (
+            (&quot;benchmark&quot; in os.getenv(&quot;TEST_TYPE&quot;) or is_benchmark_dev_context())
+            and (
+                (&quot;mxnet_training&quot; in request.fixturenames and &quot;gpu_only&quot; in request.fixturenames)
+                or &quot;mxnet_inference&quot; in request.fixturenames
+            )
+        ) or (
+            &quot;tensorflow_training&quot; in request.fixturenames
+            and &quot;gpu_only&quot; in request.fixturenames
+            and &quot;horovod&quot; in ec2_key_name
+        ):
+            params[&quot;BlockDeviceMappings&quot;] = extra_volume_size_mapping
+        if ei_accelerator_type:
+            params[&quot;ElasticInferenceAccelerators&quot;] = [
+                {
+                    &apos;Type&apos;: ei_accelerator_type,
+                    &apos;Count&apos;: 1
+                }
+            ]
+            availability_zones = {&quot;us-west-2&quot;: [&quot;us-west-2a&quot;, &quot;us-west-2b&quot;, &quot;us-west-2c&quot;],
+                                  &quot;us-east-1&quot;: [&quot;us-east-1a&quot;, &quot;us-east-1b&quot;, &quot;us-east-1c&quot;]}
+            for a_zone in availability_zones[region]:
+                params[&quot;Placement&quot;] = {
+                    &apos;AvailabilityZone&apos;: a_zone
+                }
+                try:
+                    instances = ec2_resource.create_instances(**params)
+                    if instances:
+                        break
+                except ClientError as e:
+                    LOGGER.error(f&quot;Failed to launch in {a_zone} with Error: {e}&quot;)
+                    continue
+        else:
+            try:
+&gt;               instances = ec2_resource.create_instances(**params)
+
+conftest.py:198: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../env/lib/python3.8/site-packages/boto3/resources/factory.py:520: in do_action
+    response = action(self, *args, **kwargs)
+../../env/lib/python3.8/site-packages/boto3/resources/action.py:83: in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+../../env/lib/python3.8/site-packages/botocore/client.py:357: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;botocore.client.EC2 object at 0x10bbb4130&gt;, operation_name = &apos;RunInstances&apos;
+api_params = {&apos;ClientToken&apos;: &apos;f721000e-4062-4f73-a111-2244063fd144&apos;, &apos;IamInstanceProfile&apos;: {&apos;Name&apos;: &apos;ec2TestInstanceRole&apos;}, &apos;ImageId&apos;: &apos;ami-032a07adeddce2db8&apos;, &apos;InstanceType&apos;: &apos;p3.16xlarge&apos;, ...}
+
+    def _make_api_call(self, operation_name, api_params):
+        operation_model = self._service_model.operation_model(operation_name)
+        service_name = self._service_model.service_name
+        history_recorder.record(&apos;API_CALL&apos;, {
+            &apos;service&apos;: service_name,
+            &apos;operation&apos;: operation_name,
+            &apos;params&apos;: api_params,
+        })
+        if operation_model.deprecated:
+            logger.debug(&apos;Warning: %s.%s() is deprecated&apos;,
+                         service_name, operation_name)
+        request_context = {
+            &apos;client_region&apos;: self.meta.region_name,
+            &apos;client_config&apos;: self.meta.config,
+            &apos;has_streaming_input&apos;: operation_model.has_streaming_input,
+            &apos;auth_type&apos;: operation_model.auth_type,
+        }
+        request_dict = self._convert_to_request_dict(
+            api_params, operation_model, context=request_context)
+    
+        service_id = self._service_model.service_id.hyphenize()
+        handler, event_response = self.meta.events.emit_until_response(
+            &apos;before-call.{service_id}.{operation_name}&apos;.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            model=operation_model, params=request_dict,
+            request_signer=self._request_signer, context=request_context)
+    
+        if event_response is not None:
+            http, parsed_response = event_response
+        else:
+            http, parsed_response = self._make_request(
+                operation_model, request_dict, request_context)
+    
+        self.meta.events.emit(
+            &apos;after-call.{service_id}.{operation_name}&apos;.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            http_response=http, parsed=parsed_response,
+            model=operation_model, context=request_context
+        )
+    
+        if http.status_code &gt;= 300:
+            error_code = parsed_response.get(&quot;Error&quot;, {}).get(&quot;Code&quot;)
+            error_class = self.exceptions.from_code(error_code)
+&gt;           raise error_class(parsed_response, operation_name)
+E           botocore.exceptions.ClientError: An error occurred (InvalidParameterValue) when calling the RunInstances operation: Value (ec2TestInstanceRole) for parameter iamInstanceProfile.name is invalid. Invalid IAM Instance Profile name
+
+../../env/lib/python3.8/site-packages/botocore/client.py:676: ClientError</error></testcase><testcase classname="benchmark.ec2.tensorflow.training.test_performance_tensorflow_training" file="benchmark/ec2/tensorflow/training/test_performance_tensorflow_training.py" line="49" name="test_performance_tensorflow_gpu_synthetic[\t763104351884.dkr.ecr.us-west-2.amazonaws.com/tensorflow-training:2.3.1-gpu-py37-cu102-ubuntu18.04-v2.10-test_performance_tensorflow_gpu_synthetic-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0-p3.16xlarge]" time="2.247"><error message="test setup failure">request = &lt;SubRequest &apos;ec2_instance&apos; for &lt;Function test_performance_tensorflow_gpu_synthetic[\t763104351884.dkr.ecr.us-west-2.am...-v2.10-test_performance_tensorflow_gpu_synthetic-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0-p3.16xlarge]&gt;&gt;
+ec2_client = &lt;botocore.client.EC2 object at 0x10c2022e0&gt;, ec2_resource = ec2.ServiceResource(), ec2_instance_type = &apos;p3.16xlarge&apos;
+ec2_key_name = &apos;test_performance_tensorflow_gpu_synthetic-tf-tr-2-3-1-gpu-py37-cu102-ubuntu18-04-v2-10-chumbalk-0&apos;, ec2_instance_role_name = &apos;ec2TestInstanceRole&apos;
+ec2_instance_ami = &apos;ami-032a07adeddce2db8&apos;, region = &apos;us-west-2&apos;, ei_accelerator_type = None
+
+    @pytest.mark.timeout(300)
+    @pytest.fixture(scope=&quot;function&quot;)
+    def ec2_instance(
+            request, ec2_client, ec2_resource, ec2_instance_type, ec2_key_name, ec2_instance_role_name, ec2_instance_ami,
+            region, ei_accelerator_type
+    ):
+        if ec2_instance_type == &quot;p3dn.24xlarge&quot;:
+            region = P3DN_REGION
+            ec2_client = boto3.client(&quot;ec2&quot;, region_name=region, config=Config(retries={&quot;max_attempts&quot;: 10}))
+            ec2_resource = boto3.resource(&quot;ec2&quot;, region_name=region, config=Config(retries={&quot;max_attempts&quot;: 10}))
+            if ec2_instance_ami != PT_GPU_PY3_BENCHMARK_IMAGENET_AMI_US_EAST_1:
+                ec2_instance_ami = UBUNTU_18_BASE_DLAMI_US_EAST_1
+        print(f&quot;Creating instance: CI-CD {ec2_key_name}&quot;)
+        key_filename = test_utils.generate_ssh_keypair(ec2_client, ec2_key_name)
+    
+        def delete_ssh_keypair():
+            if test_utils.is_pr_context():
+                test_utils.destroy_ssh_keypair(ec2_client, key_filename)
+            else:
+                with open(KEYS_TO_DESTROY_FILE, &quot;a&quot;) as destroy_keys:
+                    destroy_keys.write(f&quot;{key_filename}\n&quot;)
+        request.addfinalizer(delete_ssh_keypair)
+    
+        params = {
+            &quot;KeyName&quot;: ec2_key_name,
+            &quot;ImageId&quot;: ec2_instance_ami,
+            &quot;InstanceType&quot;: ec2_instance_type,
+            &quot;IamInstanceProfile&quot;: {&quot;Name&quot;: ec2_instance_role_name},
+            &quot;TagSpecifications&quot;: [
+                {&quot;ResourceType&quot;: &quot;instance&quot;, &quot;Tags&quot;: [{&quot;Key&quot;: &quot;Name&quot;, &quot;Value&quot;: f&quot;CI-CD {ec2_key_name}&quot;}]},
+            ],
+            &quot;MaxCount&quot;: 1,
+            &quot;MinCount&quot;: 1,
+        }
+        extra_volume_size_mapping = [{&quot;DeviceName&quot;: &quot;/dev/sda1&quot;, &quot;Ebs&quot;: {&quot;VolumeSize&quot;: 300,}}]
+        if (
+            (&quot;benchmark&quot; in os.getenv(&quot;TEST_TYPE&quot;) or is_benchmark_dev_context())
+            and (
+                (&quot;mxnet_training&quot; in request.fixturenames and &quot;gpu_only&quot; in request.fixturenames)
+                or &quot;mxnet_inference&quot; in request.fixturenames
+            )
+        ) or (
+            &quot;tensorflow_training&quot; in request.fixturenames
+            and &quot;gpu_only&quot; in request.fixturenames
+            and &quot;horovod&quot; in ec2_key_name
+        ):
+            params[&quot;BlockDeviceMappings&quot;] = extra_volume_size_mapping
+        if ei_accelerator_type:
+            params[&quot;ElasticInferenceAccelerators&quot;] = [
+                {
+                    &apos;Type&apos;: ei_accelerator_type,
+                    &apos;Count&apos;: 1
+                }
+            ]
+            availability_zones = {&quot;us-west-2&quot;: [&quot;us-west-2a&quot;, &quot;us-west-2b&quot;, &quot;us-west-2c&quot;],
+                                  &quot;us-east-1&quot;: [&quot;us-east-1a&quot;, &quot;us-east-1b&quot;, &quot;us-east-1c&quot;]}
+            for a_zone in availability_zones[region]:
+                params[&quot;Placement&quot;] = {
+                    &apos;AvailabilityZone&apos;: a_zone
+                }
+                try:
+                    instances = ec2_resource.create_instances(**params)
+                    if instances:
+                        break
+                except ClientError as e:
+                    LOGGER.error(f&quot;Failed to launch in {a_zone} with Error: {e}&quot;)
+                    continue
+        else:
+            try:
+&gt;               instances = ec2_resource.create_instances(**params)
+
+conftest.py:198: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../env/lib/python3.8/site-packages/boto3/resources/factory.py:520: in do_action
+    response = action(self, *args, **kwargs)
+../../env/lib/python3.8/site-packages/boto3/resources/action.py:83: in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+../../env/lib/python3.8/site-packages/botocore/client.py:357: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;botocore.client.EC2 object at 0x10c2ed070&gt;, operation_name = &apos;RunInstances&apos;
+api_params = {&apos;ClientToken&apos;: &apos;28c29756-74f8-4437-a334-720a0aa88246&apos;, &apos;IamInstanceProfile&apos;: {&apos;Name&apos;: &apos;ec2TestInstanceRole&apos;}, &apos;ImageId&apos;: &apos;ami-032a07adeddce2db8&apos;, &apos;InstanceType&apos;: &apos;p3.16xlarge&apos;, ...}
+
+    def _make_api_call(self, operation_name, api_params):
+        operation_model = self._service_model.operation_model(operation_name)
+        service_name = self._service_model.service_name
+        history_recorder.record(&apos;API_CALL&apos;, {
+            &apos;service&apos;: service_name,
+            &apos;operation&apos;: operation_name,
+            &apos;params&apos;: api_params,
+        })
+        if operation_model.deprecated:
+            logger.debug(&apos;Warning: %s.%s() is deprecated&apos;,
+                         service_name, operation_name)
+        request_context = {
+            &apos;client_region&apos;: self.meta.region_name,
+            &apos;client_config&apos;: self.meta.config,
+            &apos;has_streaming_input&apos;: operation_model.has_streaming_input,
+            &apos;auth_type&apos;: operation_model.auth_type,
+        }
+        request_dict = self._convert_to_request_dict(
+            api_params, operation_model, context=request_context)
+    
+        service_id = self._service_model.service_id.hyphenize()
+        handler, event_response = self.meta.events.emit_until_response(
+            &apos;before-call.{service_id}.{operation_name}&apos;.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            model=operation_model, params=request_dict,
+            request_signer=self._request_signer, context=request_context)
+    
+        if event_response is not None:
+            http, parsed_response = event_response
+        else:
+            http, parsed_response = self._make_request(
+                operation_model, request_dict, request_context)
+    
+        self.meta.events.emit(
+            &apos;after-call.{service_id}.{operation_name}&apos;.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            http_response=http, parsed=parsed_response,
+            model=operation_model, context=request_context
+        )
+    
+        if http.status_code &gt;= 300:
+            error_code = parsed_response.get(&quot;Error&quot;, {}).get(&quot;Code&quot;)
+            error_class = self.exceptions.from_code(error_code)
+&gt;           raise error_class(parsed_response, operation_name)
+E           botocore.exceptions.ClientError: An error occurred (InvalidParameterValue) when calling the RunInstances operation: Value (ec2TestInstanceRole) for parameter iamInstanceProfile.name is invalid. Invalid IAM Instance Profile name
+
+../../env/lib/python3.8/site-packages/botocore/client.py:676: ClientError</error></testcase></testsuite></testsuites>
