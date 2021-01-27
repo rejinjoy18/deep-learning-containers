@@ -3,11 +3,12 @@
 
 set -ex
 
+function install_kubectl_client(){
+    curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl
+    chmod +x /usr/local/bin/kubectl
+}
 # aws caller identity
 aws sts get-caller-identity
-
-#aws-iam-authenticator version
-aws-iam-authenticator version
 
 # install aws-iam-authenticator
 if ! [ -x "$(command -v aws-iam-authenticator)" ]; then
@@ -20,16 +21,17 @@ aws-iam-authenticator version
 
 # install kubectl
 if ! [ -x "$(command -v kubectl)" ]; then
-    curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl
-    chmod +x /usr/local/bin/kubectl
+    install_kubectl_client
+else
+    # check if the kubectl client version is less than 1.18
+    KUBECTL_VERSION=$(kubectl version --client -o json)
+    CURRENT_KUBECTL_CLIENT_VERSION=$(echo "$KUBECTL_VERSION" | jq -r '.clientVersion.major').$(echo "$KUBECTL_VERSION" | jq -r '.clientVersion.minor')
+    LATEST_KUBECTL_CLIENT_VERSION=1.18
+
+    if (( $(echo "$CURRENT_KUBECTL_CLIENT_VERSION < $LATEST_KUBECTL_CLIENT_VERSION" |bc -l) )); then
+        install_kubectl_client
+    fi
 fi
-
-#kubectl version
-kubectl version --short --client
-
-#temp changes
-curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl
-chmod +x /usr/local/bin/kubectl
 
 #kubectl version
 kubectl version --short --client
