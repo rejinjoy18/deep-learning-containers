@@ -6,6 +6,9 @@ set -ex
 # aws caller identity
 aws sts get-caller-identity
 
+#aws-iam-authenticator version
+aws-iam-authenticator version
+
 # install aws-iam-authenticator
 if ! [ -x "$(command -v aws-iam-authenticator)" ]; then
     curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/aws-iam-authenticator -o /usr/local/bin/aws-iam-authenticator
@@ -20,6 +23,13 @@ if ! [ -x "$(command -v kubectl)" ]; then
     curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl
     chmod +x /usr/local/bin/kubectl
 fi
+
+#kubectl version
+kubectl version --short --client
+
+#temp changes
+curl --silent --location https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl
+chmod +x /usr/local/bin/kubectl
 
 #kubectl version
 kubectl version --short --client
