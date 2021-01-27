@@ -157,6 +157,12 @@ if [ -z "${EC2_KEY_PAIR_NAME}" ]; then
   echo "No EC2 key pair name configured. Creating KeyPair ${KEY_NAME}"
   create_ec2_key_pair ${KEY_NAME}
   EC2_KEY_PAIR_NAME=${KEY_NAME}
+else
+  exist=$(aws ec2 describe-key-pairs --key-name ${EC2_KEY_PAIR_NAME} --region ${AWS_REGION} | grep KeyName | wc -l)
+  if [ ${exist} -eq 0 ]; then
+    echo "EC2 key pair ${EC2_KEY_PAIR_NAME} specified do not exist"
+    exit 1
+  fi
 fi
 
 
