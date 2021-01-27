@@ -6,7 +6,7 @@ phases:
       docker: 18
   pre_build:
     commands:
-      - yum install bc
+      - apt-get install bc
       - bash eks_infra/env_setup.sh
   build:
     commands:
