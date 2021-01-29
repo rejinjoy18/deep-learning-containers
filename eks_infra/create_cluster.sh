@@ -37,7 +37,7 @@ function create_node_group(){
     STATIC_NODEGROUP_INSTANCE_TYPE="m5.large"
     GPU_NODEGROUP_INSTANCE_TYPE="p3.16xlarge"
     INF_NODEGROUP_INSTANCE_TYPE="inf1.xlarge"
-    INF_NODEGROUP_AMI="ami-0532808ed453f9ca3"
+    INF_NODEGROUP_AMI="ami-0500cb9ff7a58f6b8"
     
     # static nodegroup
     eksctl create nodegroup \
@@ -75,7 +75,7 @@ function create_node_group(){
     --node-volume-size 500 \
     --node-ami ${INF_NODEGROUP_AMI} \
     --node-labels "test_type=inf" \
-    --tags "k8s.io/cluster-autoscaler/node-template/label/test_type=inf" \
+    --tags "k8s.io/cluster-autoscaler/node-template/label/test_type=inf,k8s.io/cluster-autoscaler/node-template/resources/aws.amazon.com/neuron=1" \
     --asg-access \
     --ssh-access \
     --ssh-public-key "${3}"
