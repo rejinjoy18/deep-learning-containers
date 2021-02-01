@@ -4,8 +4,7 @@
         "PR"
     ],
     "eks_clusters":[
-        "tensorflow",
-        "mxnet"
+        "tensorflow"
     ],
     "eks_version": "1.18",
     "cluster_autoscalar_image_version": "v1.18.3"
